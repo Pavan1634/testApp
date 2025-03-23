@@ -1,46 +1,11 @@
-import { useState } from 'react'
-import './App.css'
+import React from "react";
 
-function App() {
-  const [count, setCount] = useState(0)
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleLogin = (e) => {
-    e.preventDefault();
-    alert(`Login Attempt: \nEmail: ${email}\nPassword: ${password}`);
-  };
-
-
+const Profile = () => {
   return (
-    <div className="login-container">
-    <h2>Login</h2>
-    <form onSubmit={handleLogin}>
-      <div className="input-group">
-        <label>Email:</label>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-      </div>
-      <div className="input-group">
-        <h1>Hello World</h1>
-        <label>Password:</label>
-        <input
-          type="password"
-          placeholder="Enter your password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          required
-        />
-      </div>
-     
-    </form>
-  </div>
-)
-}
+    <div>
+      <h1>Hello !! I am Pavan Yadav</h1>
+    </div>
+  );
+};
 
-export default App
+export default Profile;
